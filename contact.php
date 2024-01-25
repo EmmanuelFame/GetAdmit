@@ -1,120 +1,145 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="freeCodeCamp Accessibility Quiz practice project" />
-    <title>Contact Us At GetAdmit</title>
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <header>
-      <img id="logo" src="./static/logo-transparent-svg.svg">
-      <h1>Register</h1>
-      <nav>
-        <ul>
-          <li><a href="index.html">HOME</a></li>
-          <li><a href="#html-questions">PROSPECT</a></li>
-          <li><a href="#css-questions">DEGREE</a></li>
-        </ul>
-      </nav>
-    </header>
-    <main>
-      
-      <form method="post" action="https://freecodecamp.org/practice-project/accessibility-quiz">
-        <section role="region" aria-labelledby="student-info">
-          <h2 id="student-info">Please fill in the following information:</h2>
-          <div class="info">
-            <label for="student-name">Name:</label>
-            <input type="text" name="student-name" id="student-name" />
-          </div>
-          <div class="info">
-            <label for="student-email">Email:</label>
-            <input type="email" name="student-email" id="student-email" />
-          </div>
-          <div class="info">
-            <label for="birth-date">D.O.B.<span class="sr-only">(Date of Birth)</span></label>
-            <input type="date" name="birth-date" id="birth-date" />
-          </div>
-        </section>
-        <section role="region" aria-labelledby="html-questions">
-          <h2 id="html-questions">Prospect</h2>
-          <div class="question-block">
-            <p>1</p>
-            <fieldset class="question" name="html-question-one">
-              <legend>
-                Are you ready to begin the process of studying in Russia?
-              </legend>
-              <ul class="answers-list">
-                <li>
-                  <label for="q1-a1">
-                    <input type="radio" id="q1-a1" name="q1" value="true" />
-                    Yes
-                  </label>
-                </li>
-                <li>
-                  <label for="q1-a2">
-                    <input type="radio" id="q1-a2" name="q1" value="false" />
-                    No
-                  </label>
-                </li>
-              </ul>
-            </fieldset>
-          </div>
-          <div class="question-block">
-            <p>2</p>
-            <fieldset class="question" name="html-question-two">
-              <legend>
-                Are you ready to learn the Russian language?
-              </legend>
-              <ul class="answers-list">
-                <li>
-                  <label for="q2-a1">
-                    <input type="radio" id="q2-a1" name="q2" value="true" />
-                    Yes
-                  </label>
-                </li>
-                <li>
-                  <label for="q2-a2">
-                    <input type="radio" id="q2-a2" name="q2" value="false" />
-                    Not Sure
-                  </label>
-                </li>
-              </ul>
-            </fieldset>
-          </div>
-        </section>
-        <section role="region" aria-labelledby="css-questions">
-          <h2 id="css-questions">Degree</h2>
-          <div class="formrow">
-            <div class="question-block">
-              <label for="customer">What level are you applying for?</label>
-            </div>
-            <div class="answer">
-              <select name="customer" id="customer" required>
-                <option value="">Select an option</option>
-                <option value="yes">Undergraduate</option>
-                <option value="no">PostGraduate</option>
-              </select>
-            </div>
-            <div class="question-block">
-              <label for="css-textarea">Please type specific information stating your desired course, nationality and additional information below:</label>
-            </div>
-            <div class="answer">
-              <textarea id="css-textarea" name="css-questions" rows="5" cols="24" placeholder="My name is Emmanuel, from Nigeria..."></textarea>
-            </div>
-          </div>
-        </section>
-        <button type="submit">Send</button>
-      </form>
-      <section>
-        <div class="container social bg-slate-500">
-      <h1>Get in Touch @</h1>
-      <a href="https://wa.me/+79149516903?text=Hello GetAdmit Team. I'll like to ask about Russian Univeristy Admission process..." target="_blank"><img class="w-2 h-2" src="./static/whatsapp.jpeg"></img></a>
-      <a href="https://t.me/GetAdmit?text=Hello GetAdmit Team. I'll like to ask about Russian Univeristy Admission process..." target="_blank"><img class="w-2 h-2" src="./static/Telegram.png"></img></a>
-    </div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="freeCodeCamp Accessibility Quiz practice project" />
+  <title>Contact Us At GetAdmit</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <header>
+    <img id="logo" src="./static/logo-transparent-svg.svg">
+    <h1>Register</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="#html-questions">PROSPECT</a></li>
+        <li><a href="#css-questions">DEGREE</a></li>
+      </ul>
+    </nav>
+  </header>
+  <section>
+    <?php
+
+
+    if ($_POST["message"]) {
+
+
+      mail(
+        "emmanuelayofame@gmail.com",
+        "Here is the subject line",
+
+
+        $_POST["insert your message here"] . "From: emmanuelayofame@gmail.com"
+      );
+
+
+    }
+    ?>
+  </section>
+  <main>
+
+    <form method="post" action="form.php">
+      <section role="region" aria-labelledby="student-info">
+        <h2 id="student-info">Please fill in the following information:</h2>
+        <div class="info">
+          <label for="student-name">Name:</label>
+          <input type="text" name="student-name" id="student-name" />
+        </div>
+        <div class="info">
+          <label for="student-email">Email:</label>
+          <input type="email" name="student-email" id="student-email" />
+        </div>
+        <div class="info">
+          <label for="birth-date">D.O.B.<span class="sr-only">(Date of Birth)</span></label>
+          <input type="date" name="birth-date" id="birth-date" />
+        </div>
       </section>
-      <!-- <section>
+      <section role="region" aria-labelledby="html-questions">
+        <h2 id="html-questions">Prospect</h2>
+        <div class="question-block">
+          <p>1</p>
+          <fieldset class="question" name="html-question-one">
+            <legend>
+              Are you ready to begin the process of studying in Russia?
+            </legend>
+            <ul class="answers-list">
+              <li>
+                <label for="q1-a1">
+                  <input type="radio" id="q1-a1" name="q1" value="true" />
+                  Yes
+                </label>
+              </li>
+              <li>
+                <label for="q1-a2">
+                  <input type="radio" id="q1-a2" name="q1" value="false" />
+                  No
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+        </div>
+        <div class="question-block">
+          <p>2</p>
+          <fieldset class="question" name="html-question-two">
+            <legend>
+              Are you ready to learn the Russian language?
+            </legend>
+            <ul class="answers-list">
+              <li>
+                <label for="q2-a1">
+                  <input type="radio" id="q2-a1" name="q2" value="true" />
+                  Yes
+                </label>
+              </li>
+              <li>
+                <label for="q2-a2">
+                  <input type="radio" id="q2-a2" name="q2" value="false" />
+                  Not Sure
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+        </div>
+      </section>
+      <section role="region" aria-labelledby="css-questions">
+        <h2 id="css-questions">Degree</h2>
+        <div class="formrow">
+          <div class="question-block">
+            <label for="customer">What level are you applying for?</label>
+          </div>
+          <div class="answer">
+            <select name="customer" id="customer" required>
+              <option value="">Select an option</option>
+              <option value="yes">Undergraduate</option>
+              <option value="no">PostGraduate</option>
+            </select>
+          </div>
+          <div class="question-block">
+            <label for="css-textarea">Please type specific information stating your desired course, nationality and
+              additional information below:</label>
+          </div>
+          <div class="answer">
+            <textarea id="css-textarea" name="css-questions" rows="5" cols="24"
+              placeholder="My name is Emmanuel, from Nigeria..."></textarea>
+          </div>
+        </div>
+      </section>
+      <button type="submit">Send</button>
+    </form>
+    <section>
+      <div class="container social bg-slate-500">
+        <h1>Get in Touch @</h1>
+        <a href="https://wa.me/+79149516903?text=Hello GetAdmit Team. I'll like to ask about Russian Univeristy Admission process..."
+          target="_blank"><img class="w-2 h-2" src="./static/whatsapp.jpeg"></img></a>
+        <a href="https://t.me/GetAdmit?text=Hello GetAdmit Team. I'll like to ask about Russian Univeristy Admission process..."
+          target="_blank"><img class="w-2 h-2" src="./static/Telegram.png"></img></a>
+      </div>
+    </section>
+    <!-- <section>
         <select>
             <option id="1" value="1">Agricultural Engineering</option>
             <option id="2" value="2">Agriculture</option>
@@ -301,214 +326,220 @@
         </select>
 
       </section> -->
-    </main>
-    <footer>
-      <address>
-        <a href="index.html">GetAdmit Team</a><br />
-        &COPY;2024 All Rights Reserved <br />
-        Irkutsk|Moscow|Ufa|Lagos,Nigeria.<br />
-        Russian Federation<br />
-      </address>
-    </footer>
-  </body>
+  </main>
+  <footer>
+    <address>
+      <a href="index.html">GetAdmit Team</a><br />
+      &COPY;2024 All Rights Reserved <br />
+      Irkutsk|Moscow|Ufa|Lagos,Nigeria.<br />
+      Russian Federation<br />
+    </address>
+  </footer>
+</body>
+
 </html>
-<style> 
-@media (prefers-reduced-motion: no-preference) {
-  * {
-    scroll-behavior: smooth;
+<style>
+  @media (prefers-reduced-motion: no-preference) {
+    * {
+      scroll-behavior: smooth;
+    }
   }
-}
 
-body {
-  background: #f5f6f7;
-  color: #1b1b32;
-  font-family: Helvetica;
-  margin: 0;
-}
-.social{
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-.social a img{
-  text-decoration: none;
-  color: #1b1b32;
-  height: 75px;
-  width: 80px;
-}
-header {
-  width: 100%;
-  height: 120px;
-  background-color: #1b1b32;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  position: fixed;
-  top: 0;
-}
-#logo {
-  width: max(100px, 18vw);
-  /* background-color: #0a0a23; */
-  aspect-ratio: 35 / 4;
-  padding: 0.4rem;
-  height: 110px;
-  margin: 1rem;
-}
+  body {
+    background: #f5f6f7;
+    color: #1b1b32;
+    font-family: Helvetica;
+    margin: 0;
+  }
 
-h1 {
-  color: #f1be32;
-  font-size: min(5vw, 1.2em);
-  text-align: center;
-}
+  .social {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
 
-nav {
-  width: 50%;
-  max-width: 300px;
-  height: 120px;
-}
+  .social a img {
+    text-decoration: none;
+    color: #1b1b32;
+    height: 75px;
+    width: 80px;
+  }
 
-nav > ul {
-  display: flex;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
-  align-items: center;
-  padding-inline-start: 0;
-  margin-block: 0;
-  height: 100%;
-}
+  header {
+    width: 100%;
+    height: 120px;
+    background-color: #1b1b32;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+  }
 
-nav > ul > li {
-  color: #dfdfe2;
-  margin: 0 0.2rem;
-  padding: 0.2rem;
-  display: block;
-}
+  #logo {
+    width: max(100px, 18vw);
+    /* background-color: #0a0a23; */
+    aspect-ratio: 35 / 4;
+    padding: 0.4rem;
+    height: 110px;
+    margin: 1rem;
+  }
 
-nav > ul > li:hover {
-  background-color: #dfdfe2;
-  color: #1b1b32;
-  cursor: pointer;
-}
+  h1 {
+    color: #f1be32;
+    font-size: min(5vw, 1.2em);
+    text-align: center;
+  }
 
-li > a {
-  color: inherit;
-  text-decoration: none;
-}
+  nav {
+    width: 50%;
+    max-width: 300px;
+    height: 120px;
+  }
 
-main {
-  padding-top: 50px;
-}
+  nav>ul {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-inline-start: 0;
+    margin-block: 0;
+    height: 100%;
+  }
 
-section {
-  width: 80%;
-  margin: 0 auto 10px auto;
-  max-width: 600px;
-}
+  nav>ul>li {
+    color: #dfdfe2;
+    margin: 0 0.2rem;
+    padding: 0.2rem;
+    display: block;
+  }
 
-h1,
-h2 {
-  font-family: Verdana, Tahoma;
-}
+  nav>ul>li:hover {
+    background-color: #dfdfe2;
+    color: #1b1b32;
+    cursor: pointer;
+  }
 
-h2 {
-  border-bottom: 4px solid #dfdfe2;
-  margin-top: 20px;
-  padding-top: 80px;
-}
+  li>a {
+    color: inherit;
+    text-decoration: none;
+  }
 
-.info {
-  margin-top: 30px;
-  padding: 10px 0 0 5px;
-}
+  main {
+    padding-top: 50px;
+  }
 
-.formrow {
-  margin-top: 30px;
-  padding: 0px 15px;
-}
+  section {
+    width: 80%;
+    margin: 0 auto 10px auto;
+    max-width: 600px;
+  }
 
-input {
-  font-size: 16px;
-}
+  h1,
+  h2 {
+    font-family: Verdana, Tahoma;
+  }
 
-.info label, .info input {
-  display: inline-block;
-}
+  h2 {
+    border-bottom: 4px solid #dfdfe2;
+    margin-top: 20px;
+    padding-top: 80px;
+  }
 
-.info input {
-  width: 50%;
-  text-align: left;
-}
+  .info {
+    margin-top: 30px;
+    padding: 10px 0 0 5px;
+  }
 
-.info label {
-  width: 10%;
-  min-width: 55px;
-  text-align: right;
-}
+  .formrow {
+    margin-top: 30px;
+    padding: 0px 15px;
+  }
 
-.question-block {
-  text-align: left;
-  display: block;
-  width: 100%;
-  margin-top: 20px;
-  padding-top: 5px;
-}
+  input {
+    font-size: 16px;
+  }
 
-p {
-  margin-top: 5px;
-  padding-left: 15px;
-  font-size: 20px;
-}
+  .info label,
+  .info input {
+    display: inline-block;
+  }
 
-p::before {
-  content: "Question #";
-}
+  .info input {
+    width: 50%;
+    text-align: left;
+  }
 
-.question {
-  border: none;
-  padding-bottom: 0;
-}
+  .info label {
+    width: 10%;
+    min-width: 55px;
+    text-align: right;
+  }
 
-.answers-list {
-  list-style: none;
-  padding: 0;
-}
+  .question-block {
+    text-align: left;
+    display: block;
+    width: 100%;
+    margin-top: 20px;
+    padding-top: 5px;
+  }
 
-button {
-  display: block;
-  margin: 40px auto;
-  width: 40%;
-  padding: 15px;
-  font-size: 23px;
-  background: #d0d0d5;
-  border: 3px solid #3b3b4f;
-}
+  p {
+    margin-top: 5px;
+    padding-left: 15px;
+    font-size: 20px;
+  }
 
-footer {
-  background-color: #2a2a40;
-  display: flex;
-  justify-content: center;
-}
+  p::before {
+    content: "Question #";
+  }
 
-footer,
-footer a {
-  color: #dfdfe2;
-  text-decoration: none;
-}
+  .question {
+    border: none;
+    padding-bottom: 0;
+  }
 
-address {
-  text-align: center;
-  padding: 0.3em;
-}
+  .answers-list {
+    list-style: none;
+    padding: 0;
+  }
 
-.sr-only {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  padding: 0;
-  margin: -1px;
-  overflow: hidden;
-  clip: rect(0, 0, 0, 0);
-  white-space: nowrap;
-  border: 0;
-}
+  button {
+    display: block;
+    margin: 40px auto;
+    width: 40%;
+    padding: 15px;
+    font-size: 23px;
+    background: #d0d0d5;
+    border: 3px solid #3b3b4f;
+  }
+
+  footer {
+    background-color: #2a2a40;
+    display: flex;
+    justify-content: center;
+  }
+
+  footer,
+  footer a {
+    color: #dfdfe2;
+    text-decoration: none;
+  }
+
+  address {
+    text-align: center;
+    padding: 0.3em;
+  }
+
+  .sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+  }
 </style>
