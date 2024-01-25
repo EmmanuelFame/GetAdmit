@@ -18,6 +18,7 @@ nav {
   background-repeat: no-repeat;
   background-size: cover;
   animation: 80s linear infinite background-nav;
+  width: 100%;
 }
 #logo {
   width: max(100px, 18vw);
