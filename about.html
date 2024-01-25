@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="stylesheet" href="./styles.css">
+  </head>
+  <body>
+    <header class="header">
+      <div>
+        <a href="index.html"><img id="logo" src="/static/logo-transparent-png.png"></img></a>
+      </div>
+      <h1>GetAdmit Team</h1>
+      <h2>Process your admission into Russian universities With Us.</h2>
+      <ul>
+        <li><a href="index.html"  class="">HOME</a></li>
+        <li><a href="#choose">WHY CHOOSE US</a></li>
+        <li><a href="#team">OUR TEAM</a></li>
+      </ul>
+    </header>
+    <div>
+
+      <h2>Welcome to GetAdmit - Your Gateway to Russian Education!</h2>
+
+<p>At GetAdmit, we are a passionate team of students dedicated to making the journey to study in Russia as smooth and stress-free as possible. Recognizing the challenges that many students face during the admission process, we've come together to offer a helping hand.</p>
+
+<p><strong>Our mission is simple</strong>: to assist fellow students in navigating the intricate path of applying for higher education in Russia. We understand the importance of this significant step in your academic journey, and we want to ensure that your transition is not only successful but also enjoyable.</p>
+
+<p><strong>What sets us apart?</strong> We are students just like you, who have experienced the highs and lows of the admission process firsthand. Our team is comprised of individuals from various backgrounds and disciplines, united by a common goal - to share our knowledge, insights, and experiences to guide you through the complexities of applying to Russian universities.</p>
+
+<p><strong>From selecting the</strong> right course to deciphering the admission requirements, handling paperwork, and even providing tips on adapting to the Russian culture - GetAdmit is your one-stop solution. We are not just advisors; we are your companions on this exciting academic adventure.</p>
+
+<h2 id="choose">Why choose GetAdmit?</h2>
+
+<p><strong>Personalized Guidance</strong>: We understand that every student is unique. Our team is committed to providing personalized guidance tailored to your individual needs and aspirations.</p>
+
+    <p><strong>Timely Support</strong>: The admission process can be overwhelming, but with GetAdmit, you're never alone. We offer timely support at every stage, ensuring that your questions are answered promptly and effectively.</p>
+
+    <p><strong>Insider Knowledge</strong>: As students who have successfully navigated the Russian admission process, we offer valuable insider knowledge that goes beyond what's written in the brochures.</p>
+
+    <p><strong>Empathy and Understanding</strong>: We get it. The stress, the excitement, the uncertainty - we've been there. GetAdmit is not just about providing information; it's about understanding and empathizing with the unique challenges you face.</p>
+
+    <p>Embark on your educational journey with confidence. Choose GetAdmit, and let us be your guide to a world of opportunities in Russian academia. Together, we'll turn your dreams of studying in Russia into a reality!</p> 
+    </div>
+    <div id="team" class="gallery">
+      <img src="https://cdn.freecodecamp.org/curriculum/css-photo-gallery/1.jpg">
+      <img src="https://cdn.freecodecamp.org/curriculum/css-photo-gallery/3.jpg">
+      <img src="https://cdn.freecodecamp.org/curriculum/css-photo-gallery/4.jpg">
+      <img src="https://cdn.freecodecamp.org/curriculum/css-photo-gallery/9.jpg">
+    </div>
+  </body>
+  <footer>
+    <address>
+      <a href="index.html">GetAdmit Team</a><br />
+      &COPY;2024 All Rights Reserved <br />
+      Irkutsk|Moscow|Ufa|Lagos,Nigeria.<br />
+      Russian Federation<br />
+    </address>
+  </footer>
+</html>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background: #f5f6f7;
+}
+header ul{
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  align-items: center;
+  padding-inline-start: 0;
+  margin-block: 0;
+  height: 100%;
+}
+header ul li{
+  color: #dfdfe2;
+  margin: 0 0.2rem;
+  padding: 0.2rem;
+  display: block;
+}
+header > ul > li:hover {
+  background-color:teal;
+  color: gold;
+  cursor: pointer;
+}
+
+li > a {
+  color: gold;
+  font-size: large;
+  font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+  text-decoration: none;
+}
+#logo {
+  width: max(100px, 18vw);
+  /* background-color: #0a0a23; */
+  aspect-ratio: 35 / 4;
+  padding: 0.4rem;
+  height: 110px;
+  margin: 1rem;
+}
+
+p{
+  margin: 10px;
+}
+h2{
+  text-align: center;
+}
+.header {
+  text-align: center;
+  text-transform: uppercase;
+  padding: 32px;
+  background-color: #0a0a23;
+  color: #fff;
+  border-bottom: 4px solid #fdb347;
+}
+
+.gallery {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 20px 10px;
+}
+
+.gallery img {
+  width: 100%;
+  max-width: 350px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.gallery::after {
+  content: "";
+  width: 350px;
+}
+footer {
+  background-color: #2a2a40;
+  display: flex;
+  justify-content: center;
+}
+
+footer,
+footer a {
+  color: #dfdfe2;
+  text-decoration: none;
+}
+
+address {
+  text-align: center;
+  padding: 0.3em;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+</style>

@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <script src="../node_modules/flowbite/dist/flowbite.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/master.css" />
+    <title>Get Admit</title>
+  </head>
+  <body>
+    <nav flex flex-col>
+      <div>
+        <a href="index.html"><img id="logo" src="/static/logo-transparent-png.png"></img></a>
+      </div>
+      <div
+        class="container flex flex-row p-4 mx-2  space-x-5 justify-between"
+      >
+        <button
+          class="flex-auto  sm:bg-transparent rounded-lg h-9 text-2xl font-bold text-yellow-400 hover:bg-slate-500"
+        >
+          <a href="index.html"> Home </a>
+        </button>
+        <button
+          class="flex-auto  sm:bg-transparent rounded-lg h-9 text-2xl font-bold text-yellow-400 hover:bg-slate-500"
+        >
+          <a href="about.html" rel="noreferrer"> About Us</a>
+        </button>
+        <button
+          class="flex-auto  sm:bg-transparent rounded-lg h-9 font-bold text-2xl text-yellow-400 hover:bg-slate-500"
+        >
+          <a href="services.html">Services</a>
+        </button>
+        <button
+          class="flex-auto  sm:bg-transparent rounded-lg h-9 font-bold text-2xl text-yellow-400 hover:bg-slate-500"
+        >
+          <a href="contact.html"> Contact </a>
+        </button>
+      </div>
+      
+      </nav>
+
+      <!--Carousel from flowbite-->
+      <div id="controls-carousel" class="relative w-full" data-carousel="slide">
+        <!-- Carousel wrapper -->
+        <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
+          <!-- Item 2 -->
+          <div
+            class="duration-700 ease-in-out"
+            id="data-carousel-item2"
+            data-carousel-item
+          >
+            <img
+              src="/static/alexander-smagin-B_F3hj-Z_Sc-unsplash.jpg"
+              class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+              alt="..."
+            />
+          </div>
+          <!-- Item 3 -->
+          <div
+            class="duration-700 ease-in-out"
+            id="data-carousel-item3"
+            data-carousel-item
+          >
+            <img
+              src="/static/front-view-smiley-students-posing-together.jpg"
+              class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+              alt="..."
+            />
+          </div>
+          <!-- Item 4 -->
+          <div
+            class="duration-700 ease-in-out"
+            id="data-carousel-item4"
+            data-carousel-item
+          >
+            <img
+              src="/static/nikolay-vorobyev-jaH3QF46gAY-unsplash.jpg"
+              class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+              alt="..."
+            />
+          </div>
+          <!-- Item 5 -->
+          <div
+            class="duration-700 ease-in-out"
+            id="data-carousel-item5"
+            data-carousel-item
+          >
+            <img
+              src="/static/rut-miit-3EMw3T-ZjkE-unsplash.jpg"
+              class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+              alt="..."
+            />
+          </div>
+          <div
+            class="duration-700 ease-in-out"
+            id="data-carousel-item6"
+            data-carousel-item
+          >
+            <img
+              src="/static/alexander-smagin-MEWRrCmEiGc-unsplash.jpg"
+              class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+              alt="..."
+            />
+          </div>
+          <div
+            class="duration-700 ease-in-out"
+            id="data-carousel-item7"
+            data-carousel-item
+          >
+            <img
+              src="/static/klara-kulikova-Gw7prc7eiug-unsplash.jpg "
+              class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+              alt="..."
+            />
+          </div>
+          <div
+            class="duration-700 ease-in-out"
+            id="data-carousel-item8"
+            data-carousel-item
+          >
+            <img
+              src="/static/victor-malyushev-jDQ7goYMKgc-unsplash.jpg"
+              class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+              alt="..."
+            />
+          </div>
+        </div>
+        <!-- Slider controls -->
+        <button
+          type="button"
+          class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+          data-carousel-prev
+        >
+          <span
+            class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none"
+          >
+            <svg
+              class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 6 10"
+            >
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M5 1 1 5l4 4"
+              />
+            </svg>
+            <span class="sr-only">Previous</span>
+          </span>
+        </button>
+        <button
+          type="button"
+          class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+          data-carousel-next
+        >
+          <span
+            class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none"
+          >
+            <svg
+              class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 6 10"
+            >
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="m1 9 4-4-4-4"
+              />
+            </svg>
+            <span class="sr-only">Next</span>
+          </span>
+        </button>
+        
+      </div>
+      </div>
+<!--Steps to get admitted-->
+<section class="container steps flex relative text-center my-2 w-auto bg-slate-300 rounded-2xl ">
+  <h1 class="text-2xl font-bold m-2">Steps to get admitted with our service: </h1><br />
+ 
+<div class="containerr">
+  <div class="text-xl step1  text-sky-200 m-2 text-center hover:bg-slate-600 my-2 w-auto bg-slate-500 rounded-md">
+    STEP <code><strong>1</strong></code>: Choose Your desired course.
+    <button id="next1" type="button" class="bg-slate-700  rounded-lg hover:bg-slate-950 w-40 mt-2 mr-1 h-10"><strong>Next: </strong>( ͡❛ ͜ʖ ͡❛) 👉</button>
+    <p class="text-gray-400"><code>Keep clicking next to view the next steps.</code></p>
+</div> <br />
+<div class="text-xl step2 hidden text-sky-200 m-2 text-center hover:bg-slate-600 my-2 w-auto bg-slate-500 rounded-md">
+  STEP <code><strong>2</strong></code>: Directly Message Us or fill this <a href="contact.html" class="text-red-600 font-bold"><code>form</code></a>.
+  <button id="next2" type="button" class="bg-slate-700 rounded-lg hover:bg-slate-950 w-40 mt-2 mr-1 h-10"><strong>Next: </strong>( ͡❛ ͜ʖ ͡❛)👌</button>
+</div> <br />
+<div class="text-xl step3 hidden text-sky-200 m-2 text-center hover:bg-slate-600 my-2 w-auto bg-slate-500 rounded-md">
+STEP <code><strong>3</strong></code>: Send Your Certificate in pdf form.
+<button id="next3" type="button" class="bg-slate-700 rounded-lg hover:bg-slate-950 w-40 mt-2 mr-1 h-10"><strong>Next: </strong>( ͡❛ ͜ʖ ͡❛) 👉</button>
+</div> <br />
+  <div class="text-xl step4 hidden text-sky-200 m-2 text-center hover:bg-slate-600 my-2 w-auto bg-slate-500 rounded-md">
+    STEP <code><strong>4</strong></code>: Legalizing your docs(DM).
+    <button id="next4" type="button" class="bg-slate-700 rounded-lg hover:bg-slate-950 w-40 mt-2 mr-1 h-10"><strong>Next: </strong>( ͡❛ ͜ʖ ͡❛)👌</button>
+  </div><br />
+  <div class="text-xl step5 hidden text-sky-200 m-2 text-center hover:bg-slate-600 my-2 w-auto bg-slate-500 rounded-md">
+    STEP <code><strong>5</strong></code>: Application and Admission letter.
+    <button id="next5" type="button" class="bg-slate-700 rounded-lg hover:bg-slate-950 w-40 mt-2 mr-1 h-10"><strong>Next: </strong>( ͡❛ ͜ʖ ͡❛) 👉</button>
+  </div><br />
+  <div class="text-xl step6 hidden text-sky-200 m-2 text-center hover:bg-slate-600 my-2 w-auto bg-slate-500 rounded-md">
+    STEP <code><strong>6</strong></code>: Tuition Payment and Visa Interview Preparation
+    <button id="next6" type="button" class="bg-slate-700 rounded-lg hover:bg-slate-950 w-40 mt-2 mr-1 h-10"><strong>Next: </strong>🔜</button>
+  </div><br />
+  <div class="text-xl step7 hidden text-sky-200 m-2 text-center hover:bg-slate-600 my-2 w-auto bg-slate-500 rounded-md">
+    STEP <code><strong>7</strong></code>: Trip, Arrival and Settling Down
+    <button id="next7" type="button" class="bg-slate-700 rounded-lg hover:bg-slate-950 w-40 mt-2 mr-1 h-10"><strong>Next: </strong>( ͡❛ ͜ʖ ͡❛) 👉</button>
+  </div><br />
+  <div class="text-xl step8 hidden text-sky-200 m-2 text-center hover:bg-slate-600 my-2 w-auto bg-slate-500 rounded-md">
+    STEP <code><strong>8</strong></code>: Full Details by call, chat, and email.
+    <button id="next8" type="button" class="bg-slate-700 rounded-lg hover:bg-slate-950 w-40 mt-2 mr-1 h-10"><a href="https://wa.me/+79149516903?text=GetAdmit Team. I'll like to ask about Russian Univeristy Admission process..." target="_blank"><strong>Next: </strong>✍✍</a></button>
+  </div><br />
+</div>
+   
+</section>
+      <!--Course Catalogue-->
+      
+    </nav>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.js"></script>
+    <script src="/JS/index.js"></script>
+    <footer>
+      <address>
+        <a href="index.html">GetAdmit Team</a><br />
+        &COPY;2024 All Rights Reserved <br />
+        Irkutsk|Moscow|Ufa|Lagos,Nigeria.<br />
+        Russian Federation<br />
+      </address>
+      <!--My floating ghosts-->
+   <div id="float_contact" class=" flex mb-5 space-x-5 mt-3 absolute left-4 ">
+    <a href="https://wa.me/+79149516903?text=Hello GetAdmit Team. I'll like to ask about Russian Univeristy Admission process..." target="_blank"><img class="w-2 h-2 rounded-xl" src="/static/whatsapp.jpeg"></img></a>
+    <a href="https://t.me/GetAdmit?text=Hello GetAdmit Team. I'll like to ask about Russian Univeristy Admission process..." target="_blank"><img class="w-2 h-2 rounded-xl" src="/static/Telegram.png"></img></a>
+  </div>
+    </footer>
+  </body>
+</html>
