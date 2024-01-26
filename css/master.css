@@ -42,10 +42,7 @@ nav {
   aspect-ratio: 35 / 4;
   height: 110px;
 }
-#float_contact a img {
-  height: 35px;
-  width: 40px;
-}
+
 @keyframes background-nav {
   10% {
     background-position: top right;
@@ -155,7 +152,10 @@ footer a {
   color: #dfdfe2;
   text-decoration: none;
 }
-
+#float_contact a img {
+  height: 35px;
+  width: 40px;
+}
 address {
   text-align: center;
   padding: 0.3em;
