@@ -109,6 +109,7 @@ nav {
   }
   nav div button {
     background: transparent;
+    margin: auto;
   }
 }
 .containerr {
