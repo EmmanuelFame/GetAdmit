@@ -146,6 +146,24 @@ footer {
   width: auto;
   margin: 0px;
 }
+/*
+    <?php
+
+
+    if ($_POST["message"]) {
+
+
+      mail(
+        "emmanuelayofame@gmail.com",
+        "Here is the subject line",
+
+
+        $_POST["insert your message here"] . "From: emmanuelayofame@gmail.com"
+      );
+
+
+    }
+    ?> */
 
 footer,
 footer a {
